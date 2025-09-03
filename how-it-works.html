@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>How It Works | Laundry Pickup & Delivery | Bags of Laundry</title>
+  <meta name="description" content="See how our laundry pickup & delivery works: schedule, pickup, professional cleaning, and fresh delivery—often within 24 hours. Simple, transparent, and reliable."/>
+  <link rel="canonical" href="https://bagsoflaundry.com/how-it-works"/>
+
+  <!-- Social -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="How It Works | Bags of Laundry"/>
+  <meta property="og:description" content="Schedule pickup, we clean, and deliver back fresh—often within 24 hours. See the full process, FAQs, and what to expect."/>
+  <meta property="og:image" content="https://images.unsplash.com/photo-1604335399361-6839c7e4a4fa?q=80&w=1600&auto=format&fit=crop"/>
+
+  <!-- FAQ Schema for rich results -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {
+        "@type":"Question",
+        "name":"How long does the service take?",
+        "acceptedAnswer":{"@type":"Answer","text":"Most orders are returned within 24 hours. Same-day is available in select areas based on pickup time and load size."}
+      },
+      {
+        "@type":"Question",
+        "name":"Do you offer same-day pickup & delivery?",
+        "acceptedAnswer":{"@type":"Answer","text":"Yes, same-day or next-day options may be available. Choose an early pickup window during scheduling to see availability."}
+      },
+      {
+        "@type":"Question",
+        "name":"Can I set detergent, temperature, and folding preferences?",
+        "acceptedAnswer":{"@type":"Answer","text":"Absolutely. Save your preferences during scheduling—we’ll follow them every time unless you change them."}
+      },
+      {
+        "@type":"Question",
+        "name":"How are items tracked?",
+        "acceptedAnswer":{"@type":"Answer","text":"Each order receives a unique scan ID with item counts/weights. You’ll get text updates from pickup to delivery."}
+      },
+      {
+        "@type":"Question",
+        "name":"What about stains or delicate garments?",
+        "acceptedAnswer":{"@type":"Answer","text":"We pretreat visible stains and follow care labels. For delicate or special-care items, use the Dry Cleaning option or add a note."}
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root{
+      --bg:#0b1220; --bg2:#0f172a; --panel:#0e1424; --line:rgba(255,255,255,.12);
+      --text:#eaf2fb; --muted:#9fb0c6; --accent:#22d3ee; --accent2:#10b981; --warn:#f59e0b;
+      --radius:14px; --shadow:0 14px 36px rgba(4,10,22,.45); --maxw:1180px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;background:linear-gradient(180deg,var(--bg),var(--bg2));color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif;line-height:1.6}
+    a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
+    img{max-width:100%;display:block}
+    .container{max-width:var(--maxw);margin:0 auto;padding:clamp(16px,3vw,28px)}
+    .btn,.btn-alt{display:inline-block;padding:12px 18px;border-radius:12px;font-weight:800}
+    .btn{background:var(--accent);color:#05212a;box-shadow:var(--shadow)}
+    .btn-alt{border:1px solid var(--line);color:var(--text);background:transparent}
+    .card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
+    .section-title{font-size:clamp(22px,2.2vw,32px);margin:0 0 12px}
+    .sub{color:var(--muted)}
+    .grid{display:grid;gap:18px}
+    .grid.cols-2{grid-template-columns:repeat(2,1fr)}
+    .grid.cols-3{grid-template-columns:repeat(3,1fr)}
+    @media (max-width:980px){.grid.cols-2,.grid.cols-3{grid-template-columns:1fr}}
+
+    /* Hero */
+    .hero{position:relative;color:var(--text);min-height:52vh;display:flex;align-items:center}
+    .hero::before{
+      content:"";position:absolute;inset:0;z-index:0;
+      background:
+        linear-gradient(188deg,rgba(0,0,0,.25),rgba(0,0,0,.6)),
+        url('https://images.unsplash.com/photo-1583016060830-35b0c530c707?q=80&w=2000&auto=format&fit=crop')
+        center/cover no-repeat;
+    }
+    .hero::after{
+      content:"";position:absolute;inset:0;z-index:0;
+      background:radial-gradient(900px 500px at 12% 10%, rgba(34,211,238,.18), transparent);
+    }
+    .hero-wrap{position:relative;z-index:1}
+    .badge{display:inline-block;padding:6px 10px;border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,.06);font-weight:800;color:var(--muted)}
+    .h1{font-size:clamp(28px,3.8vw,48px);line-height:1.08;margin:10px 0}
+
+    /* Step cards */
+    .step{padding:18px;position:relative;overflow:hidden}
+    .step .num{position:absolute;right:12px;top:12px;font-weight:900;color:rgba(255,255,255,.15);font-size:42px}
+    .step h3{margin:.2rem 0 .4rem}
+
+    /* Timeline */
+    .timeline{position:relative;padding-left:28px}
+    .timeline::before{content:"";position:absolute;left:8px;top:0;bottom:0;width:2px;background:var(--line)}
+    .tl-item{position:relative;margin:0 0 14px}
+    .tl-item::before{content:"";position:absolute;left:-2px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--accent)}
+
+    /* Prep list */
+    .tick{color:var(--accent2);margin-right:6px}
+
+    /* FAQ */
+    details{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:14px 16px}
+    details + details{margin-top:10px}
+    summary{cursor:pointer;font-weight:800} summary::-webkit-details-marker{display:none}
+
+    /* Table (comparison) */
+    table{width:100%;border-collapse:separate;border-spacing:0;overflow:hidden;border-radius:12px;border:1px solid var(--line)}
+    th,td{padding:12px;border-bottom:1px solid var(--line);text-align:left}
+    th{background:rgba(255,255,255,.03);font-weight:800}
+    tr:last-child td{border-bottom:none}
+
+    footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted)}
+    .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:24px}
+    @media (max-width:900px){.footer-grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <section class="hero" aria-label="How It Works">
+    <div class="container hero-wrap">
+      <span class="badge">Detroit • Pickup & Delivery</span>
+      <h1 class="h1">How it works</h1>
+      <p class="sub" style="max-width:70ch">
+        Skip laundry day in four simple steps. Schedule a pickup, we collect your bag(s), clean to your preferences, and deliver back fresh—often within 24 hours.
+        Transparent pricing, text updates, and reliable windows, every time.
+      </p>
+      <div style="margin-top:12px">
+        <a class="btn" href="/schedule">Schedule Pickup</a>
+        <a class="btn-alt" href="/pricing">View Pricing</a>
+      </div>
+    </div>
+  </section>
+
+  <main>
+
+    <!-- 4 STEPS -->
+    <section aria-labelledby="steps">
+      <div class="container">
+        <h2 id="steps" class="section-title">Four simple steps</h2>
+        <div class="grid cols-2">
+          <article class="card step">
+            <div class="num">01</div>
+            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1600&auto=format&fit=crop" alt="Scheduling pickup on a phone" style="border-radius:10px;border:1px solid var(--line);margin-bottom:12px">
+            <h3>Schedule</h3>
+            <p class="sub">Book a pickup window online. Add detergent, temperature, and folding preferences. Choose Wash &amp; Fold or Dry Cleaning.</p>
+          </article>
+
+          <article class="card step">
+            <div class="num">02</div>
+            <img src="https://images.unsplash.com/photo-1583016060830-35b0c530c707?q=80&w=1600&auto=format&fit=crop" alt="Driver picking up laundry bags from doorstep" style="border-radius:10px;border:1px solid var(--line);margin-bottom:12px">
+            <h3>Pickup</h3>
+            <p class="sub">Place your bag(s) by the door. We scan your order, confirm counts/weights, and send a text update as we head your way.</p>
+          </article>
+
+          <article class="card step">
+            <div class="num">03</div>
+            <img src="https://images.unsplash.com/photo-1609710228159-0fa9bd7c85b0?q=80&w=1600&auto=format&fit=crop" alt="Laundry being cleaned and folded" style="border-radius:10px;border:1px solid var(--line);margin-bottom:12px">
+            <h3>Clean</h3>
+            <p class="sub">We sort by color/fabric, pretreat visible stains, follow care labels and your saved preferences, then fold or press as requested.</p>
+          </article>
+
+          <article class="card step">
+            <div class="num">04</div>
+            <img src="https://images.unsplash.com/photo-1604335399361-6839c7e4a4fa?q=80&w=1600&auto=format&fit=crop" alt="Neatly folded laundry delivered back to customer" style="border-radius:10px;border:1px solid var(--line);margin-bottom:12px">
+            <h3>Deliver</h3>
+            <p class="sub">Your clothes return clean, neatly folded, and ready to put away—often within 24 hours. We’ll text you as the driver heads over.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- TIMELINE -->
+    <section aria-labelledby="timeline">
+      <div class="container grid cols-2">
+        <div>
+          <h2 id="timeline" class="section-title">Typical timeline</h2>
+          <div class="card" style="padding:16px">
+            <div class="timeline">
+              <div class="tl-item">
+                <strong>0:00 — Booking</strong>
+                <div class="sub">You choose a pickup window and set preferences.</div>
+              </div>
+              <div class="tl-item">
+                <strong>+2–6 hrs — Pickup</strong>
+                <div class="sub">We collect, scan, and confirm your order with a text.</div>
+              </div>
+              <div class="tl-item">
+                <strong>+12–20 hrs — Cleaning & Drying</strong>
+                <div class="sub">Sorting, washing/drying, pretreating stains, folding or pressing.</div>
+              </div>
+              <div class="tl-item">
+                <strong>~+24 hrs — Delivery</strong>
+                <div class="sub">We text before arrival and drop off at your door. Same-day may be available.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PREP LIST -->
+        <div>
+          <h2 class="section-title">How to prep your pickup</h2>
+          <div class="card" style="padding:16px">
+            <ul class="sub" style="margin:0;padding-left:18px">
+              <li><span class="tick">✔</span> Use any sturdy bag or hamper liner (avoid loose items).</li>
+              <li><span class="tick">✔</span> Separate Dry Cleaning if possible (or label inside the bag).</li>
+              <li><span class="tick">✔</span> Note tough stains or special instructions at checkout.</li>
+              <li><span class="tick">✔</span> Place bags at your door before the window starts.</li>
+              <li><span class="tick">✔</span> Pets at home? Let us know—driver notes help.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING SNAPSHOT / WHAT'S INCLUDED -->
+    <section aria-labelledby="pricing">
+      <div class="container">
+        <h2 id="pricing" class="section-title">What’s included</h2>
+        <div class="card" style="padding:0">
+          <table aria-label="Included services comparison">
+            <thead>
+              <tr>
+                <th>Feature</th>
+                <th>Wash &amp; Fold</th>
+                <th>Dry Cleaning</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Pickup & Delivery</td><td>Included</td><td>Included</td></tr>
+              <tr><td>Sorting by color/fabric</td><td>✔</td><td>✔</td></tr>
+              <tr><td>Stain pretreatment</td><td>✔ (visible stains)</td><td>✔ (as needed)</td></tr>
+              <tr><td>Folding/Pressing</td><td>Neat fold</td><td>Professional press</td></tr>
+              <tr><td>Turnaround</td><td>~24 hours (often)</td><td>~24–48 hours</td></tr>
+              <tr><td>Preferences</td><td>Detergent, temp, softener, fold style</td><td>Care labels followed</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div style="margin-top:12px;display:flex;gap:12px;flex-wrap:wrap">
+          <a class="btn" href="/pricing">See full pricing</a>
+          <a class="btn-alt" href="/schedule">Schedule pickup</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST PANEL -->
+    <section aria-labelledby="trust">
+      <div class="container grid cols-3">
+        <div class="card" style="padding:16px">
+          <h3>Real-time updates</h3>
+          <p class="sub">We send texts at pickup, cleaning, and delivery so you always know status.</p>
+        </div>
+        <div class="card" style="padding:16px">
+          <h3>Eco-friendly options</h3>
+          <p class="sub">Sensitive-skin detergents and cold-water cycles available on request.</p>
+        </div>
+        <div class="card" style="padding:16px">
+          <h3>Licensed & insured</h3>
+          <p class="sub">Your garments are handled by trained pros in secure facilities.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <h2 id="faq-title" class="section-title">Frequently asked questions</h2>
+        <details class="card">
+          <summary>How long does it take?</summary>
+          <p class="sub">Most Wash &amp; Fold orders are returned in ~24 hours. Dry cleaning typically takes ~24–48 hours. Same-day may be available with early pickups.</p>
+        </details>
+        <details class="card">
+          <summary>What happens with stains or delicate items?</summary>
+          <p class="sub">We pretreat visible stains and follow care labels. For delicates or special care, choose Dry Cleaning or leave a note at checkout.</p>
+        </details>
+        <details class="card">
+          <summary>How do you track orders?</summary>
+          <p class="sub">Every bag receives a scan ID with item counts/weights. You’ll get text updates from pickup to delivery.</p>
+        </details>
+        <details class="card">
+          <summary>Is there a minimum?</summary>
+          <p class="sub">Some areas have per-order minimums or different same-day rules. Full details appear in the scheduler for your ZIP.</p>
+        </details>
+        <details class="card">
+          <summary>What if I’m not home?</summary>
+          <p class="sub">No problem—set a safe drop-off spot in your instructions. We’ll confirm with a photo at delivery.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section aria-labelledby="cta">
+      <div class="container card" style="padding:22px;text-align:center">
+        <h2 id="cta" class="section-title">Ready to skip laundry day?</h2>
+        <p class="sub">Start your order now—clean, folded laundry delivered back to your door.</p>
+        <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:8px">
+          <a class="btn" href="/schedule">Schedule Pickup</a>
+          <a class="btn-alt" href="/pricing">View Pricing</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer role="contentinfo">
+    <div class="container footer-grid">
+      <div>
+        <strong>Bags of Laundry</strong><br/>
+        Detroit, MI • Mon–Sun 8am–8pm<br/>
+        <a href="tel:+13135550123" style="color:inherit">(313) 555-0123</a> •
+        <a href="mailto:hello@bagsoflaundry.com" style="color:inherit">hello@bagsoflaundry.com</a>
+      </div>
+      <div>
+        <div><a href="/pricing">Pricing</a></div>
+        <div><a href="/services">Services</a></div>
+        <div><a href="/service-areas">Service Areas</a></div>
+      </div>
+      <div>
+        <div><a href="/privacy">Privacy</a></div>
+        <div><a href="/terms">Terms</a></div>
+        <div><a href="/contact">Contact</a></div>
+      </div>
+      <div style="grid-column:1/-1;margin-top:8px">© <span id="y1">2025</span> Bags of Laundry. All rights reserved.</div>
+    </div>
+  </footer>
+  <script>document.getElementById('y1').textContent=new Date().getFullYear()</script>
+</body>
+</html>

@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Pricing | Laundry Pickup & Delivery in Detroit | Bags Of Laundry</title>
+  <meta name="description" content="Simple, transparent pricing from Bags Of Laundry. $2.25/lb standard, $1.99/lb with weekly plan. $35 minimum, rush & add-ons available. Start your order today."/>
+  <link rel="canonical" href="https://bagsoflaundry.com/pricing"/>
+
+  <!-- Social -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="Pricing | Bags Of Laundry"/>
+  <meta property="og:description" content="Detroit laundry pickup & delivery. $2.25/lb standard or $1.99/lb weekly. See add-ons, minimums, and commercial rates."/>
+  <meta property="og:image" content="https://images.unsplash.com/photo-1604335399105-a0d7f6c8e6a8?q=80&w=1600&auto=format&fit=crop"/>
+
+  <!-- JSON-LD: OfferCatalog -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"LocalBusiness",
+    "@id":"https://bagsoflaundry.com/pricing#business",
+    "name":"Bags Of Laundry",
+    "url":"https://bagsoflaundry.com/pricing",
+    "telephone":"+1-313-555-0123",
+    "image":"https://bagsoflaundry.com/assets/og.jpg",
+    "description":"Laundry pickup and delivery with simple, transparent pricing across Detroit and nearby suburbs.",
+    "priceRange":"$$",
+    "areaServed":[{"@type":"City","name":"Detroit"}],
+    "hasOfferCatalog":{
+      "@type":"OfferCatalog",
+      "name":"Laundry Services",
+      "itemListElement":[
+        {
+          "@type":"Offer",
+          "priceCurrency":"USD",
+          "priceSpecification":{"@type":"UnitPriceSpecification","price":2.25,"unitCode":"LBR"},
+          "itemOffered":{"@type":"Service","name":"Standard Pickup & Delivery (Next-Day)","serviceType":"Wash & Fold"}
+        },
+        {
+          "@type":"Offer",
+          "priceCurrency":"USD",
+          "priceSpecification":{"@type":"UnitPriceSpecification","price":1.99,"unitCode":"LBR"},
+          "itemOffered":{"@type":"Service","name":"Weekly Plan (Route Day)","serviceType":"Wash & Fold Subscription"}
+        },
+        {
+          "@type":"Offer",
+          "priceCurrency":"USD",
+          "price":10,
+          "itemOffered":{"@type":"Service","name":"Rush Upgrade"},
+          "name":"+ Same-day Rush"
+        },
+        {
+          "@type":"Offer",
+          "priceCurrency":"USD",
+          "price":35,
+          "itemOffered":{"@type":"Service","name":"Small Flat-Rate Bag"}
+        },
+        {
+          "@type":"Offer",
+          "priceCurrency":"USD",
+          "price":55,
+          "itemOffered":{"@type":"Service","name":"Medium Flat-Rate Bag"}
+        },
+        {
+          "@type":"Offer",
+          "priceCurrency":"USD",
+          "price":85,
+          "itemOffered":{"@type":"Service","name":"Large Flat-Rate Bag"}
+        }
+      ]
+    },
+    "openingHours":"Mo-Su 08:00-20:00"
+  }
+  </script>
+
+  <style>
+    :root{
+      --bg:#0b1220; --bg2:#0f172a; --panel:#0e1424; --line:rgba(255,255,255,.12);
+      --text:#eaf2fb; --muted:#9fb0c6; --accent:#22d3ee; --accent2:#10b981; --warn:#f59e0b;
+      --radius:14px; --shadow:0 14px 36px rgba(4,10,22,.45); --maxw:1180px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;background:linear-gradient(180deg,var(--bg),var(--bg2));color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif;line-height:1.6}
+    a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
+    img{max-width:100%;display:block}
+    .container{max-width:var(--maxw);margin:0 auto;padding:clamp(16px,3vw,28px)}
+    .btn,.btn-alt{display:inline-block;padding:12px 18px;border-radius:12px;font-weight:800}
+    .btn{background:var(--accent);color:#05212a;box-shadow:var(--shadow)}
+    .btn-alt{border:1px solid var(--line);color:var(--text);background:transparent}
+    .card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
+    .section-title{font-size:clamp(22px,2.2vw,32px);margin:0 0 12px}
+    .sub{color:var(--muted)}
+    .grid{display:grid;gap:18px}
+    .grid.cols-2{grid-template-columns:repeat(2,1fr)}
+    .grid.cols-3{grid-template-columns:repeat(3,1fr)}
+    .grid.cols-4{grid-template-columns:repeat(4,1fr)}
+    @media (max-width:980px){.grid.cols-2,.grid.cols-3,.grid.cols-4{grid-template-columns:1fr}}
+    .price{font-size:34px;font-weight:900}
+    .unit{font-size:14px;color:var(--muted);font-weight:600}
+    .pill{display:inline-block;background:rgba(255,255,255,.06);border:1px solid var(--line);border-radius:999px;padding:4px 10px;color:var(--muted);font-weight:800}
+    .fine{font-size:12px;color:var(--muted)}
+    .list{margin:0;padding-left:18px}
+    .chip{display:inline-block;background:rgba(16,185,129,.12);color:var(--accent2);border:1px solid rgba(16,185,129,.35);padding:4px 10px;border-radius:999px;font-weight:700;margin:0 8px 8px 0}
+    table{width:100%;border-collapse:separate;border-spacing:0;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+    th,td{padding:12px;border-bottom:1px solid var(--line);text-align:left}
+    th{background:rgba(255,255,255,.03);font-weight:800}
+    tr:last-child td{border-bottom:none}
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <section style="position:relative;color:var(--text);min-height:48vh;display:flex;align-items:center">
+    <div style="position:absolute;inset:0;z-index:0;background:
+      linear-gradient(188deg,rgba(0,0,0,.25),rgba(0,0,0,.6)),
+      url('https://images.unsplash.com/photo-1609710228159-0fa9bd7c85b0?q=80&w=2000&auto=format&fit=crop')
+      center/cover no-repeat;"></div>
+    <div style="position:absolute;inset:0;z-index:0;background:radial-gradient(900px 500px at 12% 10%, rgba(34,211,238,.18), transparent)"></div>
+
+    <div class="container" style="position:relative;z-index:1">
+      <span class="pill">Bags Of Laundry • Detroit</span>
+      <h1 class="section-title" style="font-size:clamp(28px,3.4vw,44px);margin-top:10px">Simple, transparent pricing</h1>
+      <p class="sub" style="max-width:70ch">Laundry day should be easy. We price the way we operate—no surprises, no gotchas. Pick **per-pound** or a **flat-rate bag**, add rush or preferences if you want, and we’ll take it from there.</p>
+      <div style="margin-top:12px;display:flex;gap:12px;flex-wrap:wrap">
+        <a class="btn" href="/schedule">Start an Order</a>
+        <a class="btn-alt" href="/services">See Services</a>
+      </div>
+    </div>
+  </section>
+
+  <main>
+
+    <!-- CORE PRICING -->
+    <section aria-labelledby="core">
+      <div class="container">
+        <h2 id="core" class="section-title">Per-pound pricing</h2>
+        <div class="grid cols-3">
+
+          <!-- Standard -->
+          <article class="card" style="padding:18px">
+            <div class="pill">Most Popular</div>
+            <h3 style="margin:.4rem 0 .2rem">Standard (next-day)</h3>
+            <p style="margin:6px 0 0"><span class="price">$2.25</span> <span class="unit">per lb</span></p>
+            <p class="sub" style="margin-top:6px">Clean, folded, and delivered in ~24 hours. Perfect for most households.</p>
+            <ul class="sub list">
+              <li>Reliable pickup windows</li>
+              <li>Text updates & contactless options</li>
+              <li>Detergent & folding preferences saved</li>
+            </ul>
+            <a class="btn" href="/schedule" style="margin-top:10px">Schedule Pickup</a>
+            <p class="fine" style="margin-top:8px">Order minimum: $35</p>
+          </article>
+
+          <!-- Weekly plan -->
+          <article class="card" style="padding:18px">
+            <div class="pill">Best Value</div>
+            <h3 style="margin:.4rem 0 .2rem">Weekly / Bi-weekly plan</h3>
+            <p style="margin:6px 0 0"><span class="price">$1.99</span> <span class="unit">per lb</span></p>
+            <p class="sub" style="margin-top:6px">Lock in a route day and save. Great for families and busy professionals.</p>
+            <ul class="sub list">
+              <li>Same driver window each week</li>
+              <li>Automatic reminders</li>
+              <li>Easy vacation pause</li>
+            </ul>
+            <a class="btn" href="/schedule?plan=weekly" style="margin-top:10px">Choose Plan</a>
+            <p class="fine" style="margin-top:8px">Order minimum: $35</p>
+          </article>
+
+          <!-- Rush -->
+          <article class="card" style="padding:18px">
+            <div class="pill">When you’re in a hurry</div>
+            <h3 style="margin:.4rem 0 .2rem">Same-day rush</h3>
+            <p style="margin:6px 0 0"><span class="price">+$10</span> <span class="unit">or +$0.25/lb</span></p>
+            <p class="sub" style="margin-top:6px">Early pickups qualify for rush in select areas. See availability at checkout.</p>
+            <ul class="sub list">
+              <li>Morning pickup, evening delivery (typical)</li>
+              <li>Limited capacity—first come, first served</li>
+            </ul>
+            <a class="btn-alt" href="/schedule?rush=true" style="margin-top:10px">Check Availability</a>
+            <p class="fine" style="margin-top:8px">Rush not guaranteed on holidays or peak days</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- BAG PRICING -->
+    <section aria-labelledby="bags">
+      <div class="container">
+        <h2 id="bags" class="section-title">Flat-rate bag pricing (optional)</h2>
+        <p class="sub">Prefer a simple bag price? Pick a size and stuff it—**bags must close** so everyone gets a fair deal.</p>
+        <div class="grid cols-3">
+          <article class="card" style="padding:18px">
+            <h3>Small Bag</h3>
+            <p style="margin:6px 0 0"><span class="price">$35</span></p>
+            <p class="sub">Fits ~12–18 lb</p>
+            <ul class="sub list">
+              <li>Everyday loads</li>
+              <li>Singles & light weeks</li>
+            </ul>
+            <a class="btn-alt" href="/schedule?bag=small" style="margin-top:10px">Use Small</a>
+          </article>
+          <article class="card" style="padding:18px">
+            <h3>Medium Bag</h3>
+            <p style="margin:6px 0 0"><span class="price">$55</span></p>
+            <p class="sub">Fits ~20–30 lb</p>
+            <ul class="sub list">
+              <li>Family-friendly</li>
+              <li>Best value</li>
+            </ul>
+            <a class="btn-alt" href="/schedule?bag=medium" style="margin-top:10px">Use Medium</a>
+          </article>
+          <article class="card" style="padding:18px">
+            <h3>Large Bag</h3>
+            <p style="margin:6px 0 0"><span class="price">$85</span></p>
+            <p class="sub">Fits ~35–45 lb</p>
+            <ul class="sub list">
+              <li>Linen & towel heavy weeks</li>
+              <li>Households & hosts</li>
+            </ul>
+            <a class="btn-alt" href="/schedule?bag=large" style="margin-top:10px">Use Large</a>
+          </article>
+        </div>
+        <p class="fine" style="margin-top:8px">Open-bag / overstuffed fee: $10 (we’ll text first). Bag capacity estimates vary by fabric and size.</p>
+      </div>
+    </section>
+
+    <!-- ADD-ONS & SMALL PRINT -->
+    <section aria-labelledby="addons">
+      <div class="container grid cols-3">
+        <div class="card" style="padding:18px">
+          <h2 id="addons" class="section-title" style="margin-bottom:6px">Add-ons</h2>
+          <ul class="sub list">
+            <li>Hypoallergenic / eco detergent <strong>+$0.10/lb</strong></li>
+            <li>Hang-dry delicates <strong>+$0.25/lb</strong></li>
+            <li>Bedding bundle (duvet/comforter) <strong>from $20</strong></li>
+          </ul>
+        </div>
+        <div class="card" style="padding:18px">
+          <h2 class="section-title" style="margin-bottom:6px">Minimums & fees</h2>
+          <ul class="sub list">
+            <li>Order minimum <strong>$35</strong></li>
+            <li>Missed pickup window <strong>$7</strong></li>
+            <li>Extended zone (if applicable) <strong>$3–5</strong></li>
+          </ul>
+        </div>
+        <div class="card" style="padding:18px">
+          <h2 class="section-title" style="margin-bottom:6px">What’s included</h2>
+          <ul class="sub list">
+            <li>Pickup & delivery</li>
+            <li>Sorting by color/fabric</li>
+            <li>Visible stain pretreat</li>
+            <li>Neat fold or garment press</li>
+            <li>Text updates & photo proof (as requested)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICE ESTIMATOR -->
+    <section aria-labelledby="calc">
+      <div class="container">
+        <h2 id="calc" class="section-title">Quick estimate</h2>
+        <p class="sub">Enter your best guess in pounds — an average family load is ~8–12 lb. This isn’t a quote; exact totals show at checkout.</p>
+        <div class="card" style="padding:16px">
+          <div class="grid cols-3">
+            <div>
+              <label for="lbs" style="font-weight:800;display:block;margin-bottom:6px">Estimated pounds</label>
+              <input id="lbs" type="number" min="1" value="20" style="width:100%;padding:12px;border-radius:10px;border:1px solid var(--line);background:#0b1424;color:var(--text)"/>
+              <p class="fine" style="margin-top:6px">Tip: 1 kitchen trash bag ≈ 12–18 lb</p>
+            </div>
+            <div>
+              <label for="plan" style="font-weight:800;display:block;margin-bottom:6px">Plan</label>
+              <select id="plan" style="width:100%;padding:12px;border-radius:10px;border:1px solid var(--line);background:#0b1424;color:var(--text)">
+                <option value="2.25">Standard $2.25/lb</option>
+                <option value="1.99">Weekly $1.99/lb</option>
+              </select>
+              <label style="display:flex;gap:8px;align-items:center;margin-top:10px">
+                <input id="rush" type="checkbox"/> <span class="fine">Add rush (+$10)</span>
+              </label>
+              <label style="display:flex;gap:8px;align-items:center;margin-top:6px">
+                <input id="eco" type="checkbox"/> <span class="fine">Eco detergent (+$0.10/lb)</span>
+              </label>
+              <label style="display:flex;gap:8px;align-items:center;margin-top:6px">
+                <input id="hang" type="checkbox"/> <span class="fine">Hang-dry (+$0.25/lb)</span>
+              </label>
+            </div>
+            <div>
+              <div class="card" style="padding:14px">
+                <div class="pill">Estimated total</div>
+                <p id="est" style="font-weight:900;font-size:28px;margin:8px 0 0">$—</p>
+                <p class="fine">Includes $35 minimum if applicable. Taxes not included.</p>
+                <a class="btn" href="/schedule" style="margin-top:8px;display:inline-block">Schedule Pickup</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMMERCIAL -->
+    <section aria-labelledby="commercial">
+      <div class="container grid cols-2">
+        <div>
+          <h2 id="commercial" class="section-title">Commercial pricing</h2>
+          <p class="sub">Running an Airbnb portfolio, gym, spa, restaurant, or clinic? We build simple, volume-based quotes with dedicated pickup windows and delivery manifests.</p>
+          <ul class="sub list">
+            <li>Recurring routes (weekly or multi-week)</li>
+            <li>Inventory counts & bag barcodes</li>
+            <li>Preferred turnaround & rush capacity</li>
+          </ul>
+          <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:8px">
+            <a class="btn" href="/contact">Talk to Sales</a>
+            <a class="btn-alt" href="/service-areas">Check Coverage</a>
+          </div>
+        </div>
+        <div>
+          <table aria-label="Sample commercial tiers">
+            <thead><tr><th>Approx. weekly volume</th><th>Indicative rate</th><th>Notes</th></tr></thead>
+            <tbody>
+              <tr><td>50–100 lb</td><td>$2.05–$2.15/lb</td><td>Standard next-day</td></tr>
+              <tr><td>100–250 lb</td><td>$1.90–$2.05/lb</td><td>Route day required</td></tr>
+              <tr><td>250+ lb</td><td>Custom</td><td>Dedicated windows</td></tr>
+            </tbody>
+          </table>
+          <p class="fine" style="margin-top:6px">Final pricing depends on mix (towels/linens), bagging, and turnaround needs.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section aria-labelledby="faq">
+      <div class="container">
+        <h2 id="faq" class="section-title">Pricing FAQ</h2>
+        <div class="grid cols-2">
+          <div class="card" style="padding:16px">
+            <h3>Why do you have a $35 minimum?</h3>
+            <p class="sub">Each pickup has fixed costs (driver time, routing, supplies). The minimum keeps things fair for small loads.</p>
+          </div>
+          <div class="card" style="padding:16px">
+            <h3>How accurate is the estimator?</h3>
+            <p class="sub">It’s meant to help you budget. Your final total is based on actual weight and options chosen at checkout.</p>
+          </div>
+          <div class="card" style="padding:16px">
+            <h3>Do you charge extra for far suburbs?</h3>
+            <p class="sub">Some extended zones have a small $3–5 fee. Enter your ZIP during scheduling to see details.</p>
+          </div>
+          <div class="card" style="padding:16px">
+            <h3>Can I switch between per-pound and bag pricing?</h3>
+            <p class="sub">Yep—choose whatever is better for your load that day.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section aria-labelledby="cta">
+      <div class="container card" style="padding:22px;text-align:center">
+        <h2 id="cta" class="section-title">Ready to skip laundry day?</h2>
+        <p class="sub">Book a pickup in minutes. We’ll handle the rest.</p>
+        <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:8px">
+          <a class="btn" href="/schedule">Schedule Pickup</a>
+          <a class="btn-alt" href="/services">Explore Services</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer role="contentinfo" style="border-top:1px solid var(--line);padding:28px 0;color:var(--muted)">
+    <div class="container" style="display:grid;gap:24px;grid-template-columns:2fr 1fr 1fr">
+      <div>
+        <strong>Bags Of Laundry</strong><br/>
+        Detroit, MI • Mon–Sun 8am–8pm<br/>
+        <a href="tel:+13135550123" style="color:inherit">(313) 555-0123</a> •
+        <a href="mailto:hello@bagsoflaundry.com" style="color:inherit">hello@bagsoflaundry.com</a>
+      </div>
+      <div>
+        <div><a href="/pricing">Pricing</a></div>
+        <div><a href="/schedule">Schedule</a></div>
+        <div><a href="/service-areas">Service Areas</a></div>
+      </div>
+      <div>
+        <div><a href="/privacy">Privacy</a></div>
+        <div><a href="/terms">Terms</a></div>
+        <div><a href="/contact">Contact</a></div>
+      </div>
+      <div style="grid-column:1/-1;margin-top:8px">© <span id="y1">2025</span> Bags Of Laundry. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <!-- Tiny JS: year + estimator -->
+  <script>
+    document.getElementById('y1').textContent = new Date().getFullYear();
+
+    const $ = id => document.getElementById(id);
+    function calc(){
+      const lbs   = Math.max(0, parseFloat($('lbs').value)||0);
+      const rate  = parseFloat($('plan').value)||2.25;
+      const rush  = $('rush').checked ? 10 : 0;
+      const eco   = $('eco').checked ? 0.10 : 0;
+      const hang  = $('hang').checked ? 0.25 : 0;
+
+      let subtotal = lbs * (rate + eco + hang) + rush;
+      if (subtotal < 35) subtotal = 35; // minimum
+
+      $('est').textContent = `$${subtotal.toFixed(2)}`;
+    }
+    ['lbs','plan','rush','eco','hang'].forEach(id=>{
+      document.getElementById(id).addEventListener('input', calc);
+      document.getElementById(id).addEventListener('change', calc);
+    });
+    calc();
+  </script>
+</body>
+</html>
