@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./app/**/*.{ts,tsx,jsx,js}"],
+  content: ["./app/**/*.{ts,tsx,js,jsx}"],
   theme: {
     extend: {
       colors: {
@@ -14,14 +14,9 @@ module.exports = {
           line: "#E5E7EB",
           text: "#1F2937",
           muted: "#6B7280",
-        }
+        },
       },
-      boxShadow: {
-        soft: "0 8px 24px rgba(0,0,0,.06)",
-      },
-      borderRadius: {
-        xl2: "1rem",
-      },
+      boxShadow: { soft: "0 8px 24px rgba(0,0,0,.06)" },
     },
   },
   plugins: [],

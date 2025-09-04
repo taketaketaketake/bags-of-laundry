@@ -68,7 +68,8 @@ export function ErrorBoundary() {
         <Meta />
         <Links />
       </head>
-      <body>
+      <body className="min-h-screen bg-brand-bg text-brand-text">
+
         <main className="container mx-auto p-6">
           <h1 className="text-2xl font-bold">{title}</h1>
           <p className="mt-2 text-slate-400">{details}</p>
