@@ -11,12 +11,11 @@ import {
   useRouteError,
 } from "@remix-run/react";
 
-// If you're using Tailwind v4 via @tailwindcss/vite:
-import styles from "./tailwind.css?url";
-// If you're using a plain CSS file instead, swap to: import styles from "./app.css?url";
+// Change this line - remove the ?url for Tailwind v3
+import "./tailwind.css";
 
 export const links: LinksFunction = () => [
-  { rel: "stylesheet", href: styles },
+  // Remove the stylesheet link since we're importing directly
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
   { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
   {

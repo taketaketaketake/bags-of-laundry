@@ -17,3 +17,4 @@ html, body { height: 100%; }
 
 /* Soft hero band */
 .hero { @apply rounded-2xl p-6 md:p-10 border border-brand-line; background: linear-gradient(180deg, #FFF1E3 0%, rgba(255,241,227,0) 100%); }
+
