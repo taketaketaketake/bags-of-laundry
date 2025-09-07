@@ -158,6 +158,14 @@ The project is configured for Supabase but can work with any PostgreSQL database
 - Docker containerization
 - Production-ready deployment configuration
 
+
+### Laundry chechout Funnel (5 steps)
+- Basic info → pickup location, pickup date, phone
+- Order type → wash & fold / dry cleaning / combo
+- Add-ons → hang-dry, eco detergent, rush, special notes
+- User details → name + email (create/attach customer; no forced login)
+- Checkout → save card (setup intent) or pay estimate (payment intent)
+
 ### 🚧 In Development
 - Customer booking and scheduling system
 - User authentication (Supabase integration)
@@ -185,4 +193,8 @@ This is a business application for BOL Laundry Services. For development inquiri
 
 ---
 
+<<<<<<< HEAD
 Built with ❤️ for the Detroit community using Remix and modern web technologies.
+=======
+Built with ❤️ for the Detroit community using React Router and modern web technologies.
+>>>>>>> origin/main
