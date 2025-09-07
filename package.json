@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "remix vite:dev",
-    "build": "npx remix vite:build",
+    "build": "vite build && vite build --ssr",
     "start": "remix-serve ./build"
   },
   "dependencies": {
