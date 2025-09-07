@@ -60,7 +60,7 @@ export default function Index() {
             {/* Order Form */}
             <div className="hero">
               <h2 className="text-xl font-bold text-brand-text mb-6">Start Your Laundry Order</h2>
-              <form method="GET" action="/schedule" className="space-y-4">
+              <form method="POST" action="/start-basic" className="space-y-4">
                 <div>
                   <label htmlFor="addr" className="block text-sm font-semibold text-brand-text mb-2">
                     Pickup Address or ZIP*

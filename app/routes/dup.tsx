@@ -87,31 +87,6 @@ export default function Pricing() {
               <a href="/services" className="btn-alt">See Services</a>
             </div>
 
-            {/* Member Toggle */}
-            <div className="inline-flex items-center bg-white rounded-xl p-1 shadow-sm border-2 border-gray-200">
-              <button
-                type="button"
-                onClick={() => setIsMember(false)}
-                className={`px-6 py-2 rounded-lg font-medium transition-all duration-200 ${
-                  !isMember 
-                    ? 'bg-blue-600 text-white shadow-sm' 
-                    : 'text-gray-600 hover:text-gray-800'
-                }`}
-              >
-                Standard Pricing
-              </button>
-              <button
-                type="button"
-                onClick={() => setIsMember(true)}
-                className={`px-6 py-2 rounded-lg font-medium transition-all duration-200 ${
-                  isMember 
-                    ? 'bg-blue-600 text-white shadow-sm' 
-                    : 'text-gray-600 hover:text-gray-800'
-                }`}
-              >
-                Member Pricing
-              </button>
-            </div>
             
             {isMember && (
               <div className="mt-3 text-sm text-green-600 font-medium">
@@ -122,97 +97,147 @@ export default function Pricing() {
         </div>
       </section>
 
-      <main>
-        {/* CORE PRICING */}
-        <section className="py-16 lg:py-20 bg-brand-bg">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="section-title text-center text-brand-text mb-6">Per-pound pricing</h2>
-            <p className="text-center sub mb-12">
-              <span className="text-3xl font-bold text-blue-600">${currentRate}</span>
-              <span className="text-gray-600 ml-2">per pound</span>
-              {!isMember && (
-                <span className="ml-2 text-sm text-green-600 font-medium">
-                  (Save $0.26/lb with membership!)
-                </span>
-              )}
-            </p>
-            
-            <div className="grid md:grid-cols-3 gap-8 mb-12">
-              {/* 10 lbs */}
-              <article className="card p-6 text-center">
-                <h3 className="text-xl font-bold text-brand-text mb-2">10 pounds</h3>
-                <p className="mb-4">
-                  <span className="text-3xl font-black text-brand-text">${(10 * currentRate).toFixed(2)}</span> 
-                </p>
-                <p className="sub mb-4">Perfect for weekly maintenance loads</p>
-                <ul className="sub text-sm mb-6 space-y-2">
-                  <li>• Individual or light weekly loads</li>
-                  <li>• 24-hour turnaround</li>
-                  <li>• Professional wash, dry, and fold</li>
-                </ul>
-              </article>
 
-              {/* 20 lbs */}
-              <article className="card p-6 text-center">
-                <div className="inline-block bg-orange-100 text-brand-primaryDeep border border-orange-200 rounded-full px-3 py-1 text-xs font-bold mb-3">
-                  Most Popular
-                </div>
-                <h3 className="text-xl font-bold text-brand-text mb-2">20 pounds</h3>
-                <p className="mb-4">
-                  <span className="text-3xl font-black text-brand-text">${(20 * currentRate).toFixed(2)}</span> 
-                </p>
-                <p className="sub mb-4">Perfect for families and couples</p>
-                <ul className="sub text-sm mb-6 space-y-2">
-                  <li>• Most requested service size</li>
-                  <li>• Regular laundry needs</li>
-                  <li>• Best value for most households</li>
-                </ul>
-              </article>
+      <main>    
+  {/* CORE PRICING */}
+  <section className="py-16 lg:py-20 bg-brand-bg">
+    <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 className="section-title text-left text-brand-text mb-6">
+        Per-pound pricing
+      </h2>
 
-              {/* 30 lbs */}
-              <article className="card p-6 text-center">
-                <h3 className="text-xl font-bold text-brand-text mb-2">30 pounds</h3>
-                <p className="mb-4">
-                  <span className="text-3xl font-black text-brand-text">${(30 * currentRate).toFixed(2)}</span> 
-                </p>
-                <p className="sub mb-4">Best value for large households</p>
-                <ul className="sub text-sm mb-6 space-y-2">
-                  <li>• Large families or bulk laundry</li>
-                  <li>• Maximum value with per-pound pricing</li>
-                  <li>• Great for busy weeks</li>
-                </ul>
-              </article>
-            </div>
+      {/* Member Toggle */}
+      <div className="inline-flex items-center bg-white rounded-xl p-1 shadow-sm border-2 border-gray-200 mb-6">
+        <button
+          type="button"
+          onClick={() => setIsMember(false)}
+          className={`px-6 py-2 rounded-lg font-medium transition-all duration-200 ${
+            !isMember
+              ? "bg-blue-600 text-white shadow-sm"
+              : "text-gray-600 hover:text-gray-800"
+          }`}
+        >
+          Standard Pricing
+        </button>
+        <button
+          type="button"
+          onClick={() => setIsMember(true)}
+          className={`px-6 py-2 rounded-lg font-medium transition-all duration-200 ${
+            isMember
+              ? "bg-blue-600 text-white shadow-sm"
+              : "text-gray-600 hover:text-gray-800"
+          }`}
+        >
+          Member Pricing
+        </button>
+      </div>
 
-            <div className="text-center">
-              <p className="sub mb-4">All per-pound orders include:</p>
-              <div className="grid md:grid-cols-3 gap-4 max-w-4xl mx-auto text-sm sub">
-                <div>• Free pickup & delivery</div>
-                <div>• Professional wash & fold</div>
-                <div>• $35 minimum order</div>
-              </div>
-            </div>
+      <p className="text-left sub mb-12">
+        <span className="text-3xl font-bold text-blue-600">${currentRate}</span>
+        <span className="text-gray-600 ml-2">per pound</span>
+        {!isMember && (
+          <span className="ml-2 text-sm text-green-600 font-medium">
+            (Save $0.26/lb with membership!)
+          </span>
+        )}
+      </p>
+
+      <div className="grid md:grid-cols-3 gap-8 mb-12">
+        {/* 10 lbs */}
+        <article className="card p-6 text-left">
+        <div className="inline-block bg-orange-100 text-brand-primaryDeep border border-orange-200 rounded-full px-3 py-1 text-xs font-bold mb-3">
+            Most Popular
           </div>
-        </section>
+          <h3 className="text-xl font-bold text-brand-text mb-2">10 pounds</h3>
+          <p className="mb-4">
+            <span className="text-3xl font-black text-brand-text">
+              ${(10 * currentRate).toFixed(2)}
+            </span>
+          </p>
+          <p className="sub mb-4">Perfect for weekly maintenance loads</p>
+          <ul className="sub text-sm mb-6 space-y-2">
+            <li>• Individual or light weekly loads</li>
+            <li>• 24-hour turnaround</li>
+            <li>• Professional wash, dry, and fold</li>
+          </ul>
+          <a href="/schedule?bag=small" className="btn-alt block text-left">Choose Small Bag</a>
+        </article>
+
+        {/* 20 lbs */}
+        <article className="card p-6 text-left">
+          <div className="inline-block bg-orange-100 text-brand-primaryDeep border border-orange-200 rounded-full px-3 py-1 text-xs font-bold mb-3">
+            Most Popular
+          </div>
+          <h3 className="text-xl font-bold text-brand-text mb-2">20 pounds</h3>
+          <p className="mb-4">
+            <span className="text-3xl font-black text-brand-text">
+              ${(20 * currentRate).toFixed(2)}
+            </span>
+          </p>
+          <p className="sub mb-4">Perfect for families and couples</p>
+          <ul className="sub text-sm mb-6 space-y-2">
+            <li>• Most requested service size</li>
+            <li>• Regular laundry needs</li>
+            <li>• Best value for most households</li>
+          </ul>
+          <a href="/schedule?bag=small" className="btn-alt block text-left">Choose Small Bag</a>
+          </article>
+
+        {/* 30 lbs */}
+        <article className="card p-6 text-left">
+        <div className="inline-block bg-orange-100 text-brand-primaryDeep border border-orange-200 rounded-full px-3 py-1 text-xs font-bold mb-3">
+            Most Popular
+          </div>
+          <h3 className="text-xl font-bold text-brand-text mb-2">30 pounds</h3>
+          <p className="mb-4">
+            <span className="text-3xl font-black text-brand-text">
+              ${(30 * currentRate).toFixed(2)}
+            </span>
+          </p>
+          <p className="sub mb-4">Best value for large households</p>
+          <ul className="sub text-sm mb-6 space-y-2">
+            <li>• Large families or bulk laundry</li>
+            <li>• Maximum value with per-pound pricing</li>
+            <li>• Great for busy weeks</li>
+          </ul>
+          <a href="/schedule?bag=small" className="btn-alt block text-left">Choose Small Bag</a>
+          </article>
+      </div>
+
+      <div className="text-left">
+        <p className="sub mb-4">All per-pound orders include:</p>
+        <div className="grid md:grid-cols-3 gap-4 max-w-4xl text-sm sub">
+          <div>• Free pickup & delivery</div>
+          <div>• Professional wash & fold</div>
+          <div>• $35 minimum order</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
 
         {/* BAG PRICING */}
         <section className="py-16 lg:py-20 bg-white">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="section-title text-center text-brand-text mb-6">Per bag pricing</h2>
-            <p className="text-center sub mb-12">Fixed pricing regardless of weight within capacity limits—<strong className="text-brand-text">bags must close</strong> for fair pricing.</p>
+            <h2 className="section-title text-left text-brand-text mb-6">Per bag pricing</h2>
+            <p className="text-left sub mb-12">Fixed pricing regardless of weight within capacity limits—<strong className="text-brand-text">bags must close</strong> for fair pricing.</p>
             <div className="grid md:grid-cols-3 gap-8">
               
-              <article className="card p-6 text-center">
+              <article className="card p-6 text-left">
+              <div className="inline-block bg-orange-100 text-brand-primaryDeep border border-orange-200 rounded-full px-3 py-1 text-xs font-bold mb-3">
+            Most Popular
+          </div>
                 <h3 className="text-xl font-bold text-brand-text mb-2">Small Bag</h3>
                 <p className="mb-2">
                   <span className="text-4xl font-black text-brand-text">$35</span>
                 </p>
                 <p className="sub mb-4">Fits 12–18 lbs</p>
                 <p className="sub text-sm mb-6">Perfect for individuals or light loads. One fixed price regardless of actual weight within limits.</p>
-                <a href="/schedule?bag=small" className="btn-alt block text-center">Choose Small Bag</a>
+                <a href="/schedule?bag=small" className="btn-alt block text-left">Choose Small Bag</a>
               </article>
               
-              <article className="card p-6 text-center">
+              <article className="card p-6 text-left">
                 <div className="inline-block bg-orange-100 text-brand-primaryDeep border border-orange-200 rounded-full px-3 py-1 text-xs font-bold mb-3">
                   Most Popular
                 </div>
@@ -222,20 +247,23 @@ export default function Pricing() {
                 </p>
                 <p className="sub mb-4">Fits 20–30 lbs</p>
                 <p className="sub text-sm mb-6">Great for families and regular laundry loads. Fixed pricing with generous capacity limits.</p>
-                <a href="/schedule?bag=medium" className="btn-alt block text-center">Choose Medium Bag</a>
+                <a href="/schedule?bag=medium" className="btn-alt block text-left">Choose Medium Bag</a>
               </article>
               
-              <article className="card p-6 text-center">
+              <article className="card p-6 text-left">
+              <div className="inline-block bg-orange-100 text-brand-primaryDeep border border-orange-200 rounded-full px-3 py-1 text-xs font-bold mb-3">
+            Most Popular
+          </div>
                 <h3 className="text-xl font-bold text-brand-text mb-2">Large Bag</h3>
                 <p className="mb-2">
                   <span className="text-4xl font-black text-brand-text">$85</span>
                 </p>
                 <p className="sub mb-4">Fits 35–45 lbs</p>
                 <p className="sub text-sm mb-6">Best for large households or bulk loads. Fixed price with our largest capacity allowance.</p>
-                <a href="/schedule?bag=large" className="btn-alt block text-center">Choose Large Bag</a>
+                <a href="/schedule?bag=large" className="btn-alt block text-left">Choose Large Bag</a>
               </article>
             </div>
-            <p className="text-xs sub text-center mt-8">Open-bag / overstuffed fee: $10 (we'll text first). Bag capacity estimates vary by fabric and size.</p>
+            <p className="text-xs sub text-left mt-8">Open-bag / overstuffed fee: $10 (we'll text first). Bag capacity estimates vary by fabric and size.</p>
           </div>
         </section>
 

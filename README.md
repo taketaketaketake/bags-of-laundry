@@ -1,6 +1,6 @@
 # BOL - Bags Of Laundry 🧺
 
-A modern laundry pickup and delivery service serving Detroit, Michigan and surrounding areas. Built with React Router v7, TypeScript, and TailwindCSS.
+A modern laundry pickup and delivery service serving Detroit, Michigan and surrounding areas. Built with Remix, TypeScript, and TailwindCSS.
 
 ## 🏢 Business Overview
 
@@ -28,9 +28,9 @@ Currently serving Detroit neighborhoods including:
 
 ## 🚀 Tech Stack
 
-- **Framework**: React Router v7 (evolution of Remix)
+- **Framework**: Remix v2.17.0
 - **Language**: TypeScript with strict configuration
-- **Styling**: TailwindCSS v4 with custom brand design system
+- **Styling**: TailwindCSS v3 with custom brand design system
 - **Database**: Supabase (PostgreSQL with real-time capabilities)
 - **Build Tool**: Vite for fast development and optimized builds
 - **Runtime**: Node.js 20+ (Docker containerized)
@@ -48,15 +48,25 @@ Custom brand identity featuring:
 
 ```
 app/
-├── routes/                 # File-based routing
-│   ├── _marketing.*       # Marketing site layout and pages
-│   ├── areas.$slug.tsx    # Dynamic neighborhood pages
-│   ├── home.tsx           # Welcome page
-│   └── sitemap/robots     # SEO utilities
-├── welcome/               # Default React Router components
-├── root.tsx              # App shell with meta tags
-├── routes.ts             # Route configuration
-└── tailwind.css          # Custom styles and design system
+├── components/            # Reusable UI components
+│   ├── SiteHeader.tsx    # Main site header
+│   └── SiteFooter.tsx    # Main site footer
+├── routes/               # File-based routing
+│   ├── _marketing.tsx    # Marketing site layout
+│   ├── _marketing._index.tsx        # Homepage
+│   ├── _marketing.services.tsx      # Services page
+│   ├── _marketing.pricing.tsx       # Pricing page
+│   ├── _marketing.service-areas.tsx # Service areas page
+│   ├── _marketing.how-it-works.tsx  # How it works page
+│   ├── areas.$slug.tsx             # Dynamic neighborhood pages
+│   ├── sitemap[.]xml.tsx           # XML sitemap
+│   └── robots[.]txt.tsx            # Robots.txt
+├── welcome/              # Default Remix welcome components
+├── root.tsx             # App shell with meta tags
+├── routes.ts            # Route configuration
+├── tailwind.css         # Custom styles and design system
+└── app.css              # Additional styles
+htmlfiles/               # Legacy HTML files (archived)
 ```
 
 ## 🛠 Development
@@ -77,9 +87,9 @@ npm run dev
 Your application will be available at `http://localhost:5173`.
 
 ### Available Scripts
-- `npm run dev` - Start development server with HMR
-- `npm run build` - Create production build
-- `npm run start` - Start production server
+- `npm run dev` - Start development server with HMR (remix vite:dev)
+- `npm run build` - Create production build (remix vite:build)
+- `npm run start` - Start production server (remix-serve)
 
 ## 🏗 Building for Production
 
@@ -140,9 +150,11 @@ The project is configured for Supabase but can work with any PostgreSQL database
 
 ### ✅ Completed Features
 - Marketing website with responsive design
+- Complete page structure (homepage, services, pricing, service areas, how-it-works)
+- Shared layout system with header and footer components
 - SEO optimization (meta tags, sitemap, robots.txt)
-- Brand identity and custom design system
-- Service area information and pricing
+- Brand identity and custom design system with TailwindCSS
+- Service area information and pricing displays
 - Docker containerization
 - Production-ready deployment configuration
 
@@ -152,6 +164,9 @@ The project is configured for Supabase but can work with any PostgreSQL database
 - Payment processing
 - Admin dashboard for operations
 - Real-time order tracking
+
+### 📁 Legacy Files
+- `htmlfiles/` directory contains archived HTML prototypes
 
 ## 🌟 Features
 
@@ -170,4 +185,4 @@ This is a business application for BOL Laundry Services. For development inquiri
 
 ---
 
-Built with ❤️ for the Detroit community using React Router and modern web technologies.
+Built with ❤️ for the Detroit community using Remix and modern web technologies.
