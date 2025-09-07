@@ -17,27 +17,6 @@ export const meta: MetaFunction = () => [
 export default function Services() {
   return (
     <>
-      {/* HERO SECTION */}
-      <section className="py-16 lg:py-20">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="hero">
-            <div className="pill mb-6">Detroit • Pickup & Delivery</div>
-            <h1 className="text-3xl lg:text-5xl font-bold text-brand-text mb-6 leading-tight">
-              Laundry services that fit your life
-            </h1>
-            <p className="text-lg sub mb-8 leading-relaxed max-w-4xl">
-              Our core service is simple: <strong className="text-brand-text">we pick up and deliver your laundry</strong>. 
-              Add Wash & Fold for everyday items, Dry Cleaning for garments, or set up a Commercial plan for your business. 
-              Clean clothes, on your schedule.
-            </p>
-            <div className="flex flex-wrap gap-4">
-              <a href="/schedule" className="btn">Schedule Pickup</a>
-              <a href="/pricing" className="btn-alt">View Pricing</a>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <main>
         {/* SERVICE CARDS */}
         <section className="py-16 lg:py-20 bg-brand-bg">

@@ -71,23 +71,14 @@ export default function Pricing() {
 
   return (
     <>
-      {/* HERO SECTION */}
-      <section className="py-16 lg:py-20">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="hero">
-            <div className="pill mb-6">Bags Of Laundry • Detroit</div>
-            <h1 className="text-3xl lg:text-5xl font-bold text-brand-text mb-6 leading-tight">
-              Simple, transparent pricing
-            </h1>
-            <p className="text-lg sub mb-8 leading-relaxed max-w-4xl">
-              Laundry day should be easy. We price the way we operate—no surprises, no gotchas. Choose <strong className="text-brand-text">per-pound</strong> or a <strong className="text-brand-text">flat-rate bag</strong>, add rush or preferences if you want, and we'll take it from there.
-            </p>
-            <div className="flex flex-wrap gap-4 mb-8">
-              <a href="/schedule" className="btn">Start an Order</a>
-              <a href="/services" className="btn-alt">See Services</a>
-            </div>
+        <main>
+        {/* CORE PRICING */}
+        <section className="py-16 lg:py-20 bg-brand-bg">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="section-title text-center text-brand-text mb-6">Per-pound pricing</h2>
 
             {/* Member Toggle */}
+            <div className="flex justify-center mb-6">
             <div className="inline-flex items-center bg-white rounded-xl p-1 shadow-sm border-2 border-gray-200">
               <button
                 type="button"
@@ -112,21 +103,9 @@ export default function Pricing() {
                 Member Pricing
               </button>
             </div>
-            
-            {isMember && (
-              <div className="mt-3 text-sm text-green-600 font-medium">
-                🎉 Save $0.26 per pound with membership!
-              </div>
-            )}
-          </div>
-        </div>
-      </section>
+            </div>
 
-      <main>
-        {/* CORE PRICING */}
-        <section className="py-16 lg:py-20 bg-brand-bg">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="section-title text-center text-brand-text mb-6">Per-pound pricing</h2>
+            
             <p className="text-center sub mb-12">
               <span className="text-3xl font-bold text-blue-600">${currentRate}</span>
               <span className="text-gray-600 ml-2">per pound</span>
