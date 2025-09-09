@@ -83,10 +83,12 @@ export default function Pricing() {
               <button
                 type="button"
                 onClick={() => setIsMember(false)}
+                style={{
+                  backgroundColor: !isMember ? '#2563eb' : 'transparent',
+                  color: !isMember ? 'white' : '#6b7280'
+                }}
                 className={`px-6 py-2 rounded-lg font-medium transition-all duration-200 ${
-                  !isMember 
-                    ? 'bg-blue-600 text-white shadow-sm' 
-                    : 'text-gray-600 hover:text-gray-800'
+                  !isMember ? 'shadow-sm' : 'hover:text-gray-800'
                 }`}
               >
                 Standard Pricing
@@ -94,10 +96,12 @@ export default function Pricing() {
               <button
                 type="button"
                 onClick={() => setIsMember(true)}
+                style={{
+                  backgroundColor: isMember ? '#2563eb' : 'transparent',
+                  color: isMember ? 'white' : '#6b7280'
+                }}
                 className={`px-6 py-2 rounded-lg font-medium transition-all duration-200 ${
-                  isMember 
-                    ? 'bg-blue-600 text-white shadow-sm' 
-                    : 'text-gray-600 hover:text-gray-800'
+                  isMember ? 'shadow-sm' : 'hover:text-gray-800'
                 }`}
               >
                 Member Pricing
@@ -125,9 +129,9 @@ export default function Pricing() {
                 </p>
                 <p className="sub mb-4">Perfect for weekly maintenance loads</p>
                 <ul className="sub text-sm mb-6 space-y-2">
-                  <li>• Individual or light weekly loads</li>
-                  <li>• 24-hour turnaround</li>
-                  <li>• Professional wash, dry, and fold</li>
+                  <li>- Individual or light weekly loads</li>
+                  <li>- 24-hour turnaround</li>
+                  <li>- Professional wash, dry, and fold</li>
                 </ul>
               </article>
 
