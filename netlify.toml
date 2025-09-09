@@ -3,13 +3,14 @@
   publish = "public"
 
 [functions]
-  directory = "netlify/functions"
+  directory = "Netlify/functions"
 
 # Redirect all requests to the Remix server function
 [[redirects]]
   from = "/*"
-  to = "/netlify/functions/server"
+  to = "/Netlify/functions/server"
   status = 200
 
 [context.production]
   environment = { NODE_ENV = "production" }
+  
