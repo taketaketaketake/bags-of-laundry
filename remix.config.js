@@ -1,12 +1,12 @@
 /** @type {import('@remix-run/dev').AppConfig} */
-module.exports = {
-  // Netlify deployment configuration
-  assetsBuildDirectory: "build/client/assets",
-  publicPath: "/assets/",
-  serverBuildPath: "build/server/index.js",
+export default {
+  // Remove Netlify-specific build paths - let Remix handle defaults
   ignoredRouteFiles: ["**/.*"],
 
-    // Future flags (removes warnings from build logs)
+  // Use ES modules for better compatibility
+  serverModuleFormat: "esm",
+
+  // Future flags (removes warnings from build logs)
     future: {
       v3_fetcherPersist: true,
       v3_lazyRouteDiscovery: true,
