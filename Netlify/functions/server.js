@@ -2,5 +2,5 @@
 const { createRequestHandler } = require("@remix-run/netlify");
 
 module.exports = createRequestHandler({
-  build: require("../../build/index.js"),
+  build: require("../../build/server/index.js"),
 });
