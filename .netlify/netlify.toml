@@ -1,4 +1,3 @@
-redirectsOrigin = "config"
 plugins = []
 functionsDirectory = "C:\\github-projects\\bags-of-laundry\\netlify\\functions"
 functionsDirectoryOrigin = "config-v1"
