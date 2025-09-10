@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "remix vite:dev",
-    "build": "remix vite:build",
-    "start": "remix-serve ./build/server/index.js"
+    "build": "npx @remix-run/dev build",
+    "start": "remix-serve ./build"
   },
   "dependencies": {
     "@remix-run/node": "^2.17.0",
