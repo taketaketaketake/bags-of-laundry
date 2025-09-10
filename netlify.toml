@@ -1,14 +1,14 @@
 [build]
   command = "npm run build"
-  publish = build/client
+  publish = "public"
 
 [functions]
-  directory = "/.netlify/v1/functions/server"
+  directory = "Netlify/functions"
 
 # Redirect all requests to the Remix server function
 [[redirects]]
   from = "/*"
-  to = "/.netlify/v1/functions/server"
+  to = "/.netlify/functions/server"
   status = 200
 
 [context.production]
